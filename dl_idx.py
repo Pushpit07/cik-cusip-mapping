@@ -7,6 +7,7 @@ import requests
 
 with open(f'master.idx', 'wb') as f:
     for year in range(1994, 2023):
+        print(year)
         for q in range(1, 5):
             print(year, q)
             content = requests.get(
